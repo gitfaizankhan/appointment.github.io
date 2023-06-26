@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Appointment</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <form id="form" >
+        <h1 style="text-align: center; color: #ffae00;">Book a Appointment</h1>
+        <hr>
+        <label>Name</label><br>
+        <input class="form-control" type="text" name="name" id="name">
+        <br>
+        <br>
+        <label>Email</label><br>
+        <input class="form-control" type="email" name="email" id="emailID">
+        <br>
+        <br>
+        <label>Phone</label><br>
+        <input class="form-control" type="number" name="Number" id="mobile">
+        <br>
+        <br>
+        <label>Time for Call</label><br>
+        <div class="datetime">
+            <input id="date" type="date">
+            <input id="time" type="time">
+        </div>
+        <br>
+        <button type="button" onclick="result();">Book Appointment</button>
+    </form>
+
+    <table id="dataTable"></table>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="index.js" defer></script>
+</body>
+</html>
